@@ -44,13 +44,13 @@ function main() {
         var wardenPassword, watchmanPassword, AdminPassword;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, bcrypt.hash("warden123", 10)];
+                case 0: return [4 /*yield*/, bcrypt.hash("warden777", 10)];
                 case 1:
                     wardenPassword = _a.sent();
-                    return [4 /*yield*/, bcrypt.hash("watchman123", 10)];
+                    return [4 /*yield*/, bcrypt.hash("watchman777", 10)];
                 case 2:
                     watchmanPassword = _a.sent();
-                    return [4 /*yield*/, bcrypt.hash("chairman123", 10)];
+                    return [4 /*yield*/, bcrypt.hash("chairman777", 10)];
                 case 3:
                     AdminPassword = _a.sent();
                     return [4 /*yield*/, prisma.admin.upsert({
