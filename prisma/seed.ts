@@ -4,9 +4,9 @@ import * as bcrypt from 'bcryptjs';
 const prisma = new PrismaClient();
 
 async function main() {
-  const wardenPassword = await bcrypt.hash("warden123", 10);
-  const watchmanPassword = await bcrypt.hash("watchman123", 10);
-  const AdminPassword = await bcrypt.hash("chairman123", 10);
+  const wardenPassword = await bcrypt.hash("warden777", 10);
+  const watchmanPassword = await bcrypt.hash("watchman777", 10);
+  const AdminPassword = await bcrypt.hash("chairman777", 10);
 
 
   await prisma.admin.upsert({
